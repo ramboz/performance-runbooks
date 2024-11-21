@@ -52,3 +52,4 @@ Follow the steps in one of:
 - https://web.dev/articles/lcp
 - https://web.dev/articles/optimize-lcp
 - https://www.debugbear.com/docs/metrics/largest-contentful-paint
+- https://www.woorank.com/en/core-web-vitals/largest-contentful-paint
