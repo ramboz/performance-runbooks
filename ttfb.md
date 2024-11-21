@@ -2,7 +2,7 @@
 
 ## Definition
 
-TTFB (_time to first byte_) measures the time it takes for the network to respond to a user request with the first byte of a resource.
+The  Time To First Byte (TTFB) metric measures the time it takes for the network to respond to a user request with the first byte of a resource.
 
 ## Components
 

@@ -15,7 +15,7 @@ A set of runbooks to address web page performance issues and follows LHS/CWV bes
 - [First Contentful Paint (FCP)](./fcp.md)
 - First Input Delay (FID)
 - [Time to First Byte (TTFB)](./ttfb.md)
-- Total Blocking Time (TBT)
+- [Total Blocking Time (TBT)](./tbt.md)
 - Time to Interactive (TTI)
 - Speed Index (SI)
 

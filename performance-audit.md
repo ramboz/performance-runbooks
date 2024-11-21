@@ -134,12 +134,14 @@ Some techniques that can be used to mitigate this:
 
 ## Resources to dig deeper
 
--	[Chrome Dev Tools](https://developer.chrome.com/docs/devtools/performance)
+-	Chrome DevTools Performance panel
+  - https://developer.chrome.com/docs/devtools/performance
+  - https://www.debugbear.com/blog/devtools-performance
 - [TTFB](./ttfb.md)
 - [FCP](./fcp.md)
 - [LCP](./lcp.md)
 - [TBT](./tbt.md)
 - [CLS](./tbt.md)
-
+- https://www.debugbear.com/blog/devtools-performance
 
 

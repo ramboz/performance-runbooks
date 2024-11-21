@@ -2,7 +2,7 @@
 
 ## Definition
 
-FCP (_first contentful paint_) measures the time from when the page starts loading to when any part of the page's content is rendered on the screen.
+The First Contentful Paint (FCP) metric measures the time from when the page starts loading to when any part of the page's content is rendered on the screen.
 
 ## Components
 

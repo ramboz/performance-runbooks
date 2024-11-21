@@ -2,7 +2,7 @@
 
 ## Definition
 
-LCP (_largest contentful paint_) measures the time from when the page starts loading to when the largest text block.
+The Largest Contentful Paint (LCP) metric measures the time from when the page starts loading to when the largest text block.
 
 ## Components
 

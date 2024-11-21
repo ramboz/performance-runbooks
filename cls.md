@@ -1,8 +1,8 @@
-# TTFB
+# CLS
 
 ## Definition
 
-CLS (_cummulative layout shift_) is a measure of the largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page.
+The Cummulative Layout Shift (CLS) metric measures the the largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page.
 
 ## Components
 
