@@ -34,7 +34,7 @@ The Largest Contentful Paint (LCP) metric measures the time from when the page s
 - Follow the [TTFB](./ttfb.md) optimizations
 - Follow the [LCP](./lcp.md) optimizations
 - Include the LCP element in the initial HTML document
-- Try to have the LCP element being the same as the LCP one
+- Try to have the LCP element being the same as the FCP one
 - Leverage modern media formats (webp, avif, webm) and optimize for the viewport (responsive image)
   - if the LCP element is a video, make sure to use a poster image
   - if the LCP element is an image, make sure it is `loading` as `eager` and its `fetchpriority` is set to `high`
@@ -72,4 +72,5 @@ Follow the steps in one of:
 - https://web.dev/articles/lcp
 - https://web.dev/articles/optimize-lcp
 - https://www.debugbear.com/docs/metrics/largest-contentful-paint
+- https://www.debugbear.com/docs/fix-lcp-issue
 - https://www.woorank.com/en/core-web-vitals/largest-contentful-paint
