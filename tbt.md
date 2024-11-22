@@ -37,12 +37,17 @@ The Total Blocking Time (TBT) metric measures the total amount of time after [Fi
   - Use the [`queueMicrotask`](https://developer.mozilla.org/en-US/docs/Web/API/Window/queueMicrotask) API to run medium priority tasks (what `Promise.then()` does)
   - Use the [`requestIdleCallback`](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback) API to run low priority tasks when the browser is idle between rendering frames
   - Use the [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame) API to run tasks that modify the DOM and require a new frame to render
+  - Use the [`scheduler.yield`](https://developer.mozilla.org/en-US/docs/Web/API/Scheduler/yield) API to hand over control to the main thread during a long task, so it can execute other tasks in-between if needed
 - [Offload complex background work to a web worker](https://web.dev/articles/off-main-thread)
 
 
 ## How to measure
 
 Follow the steps in one of:
+- [TBT in our performance audit](./performance-audit.md#tbt) article
+- the [flame chart](https://developer.chrome.com/docs/devtools/performance/reference#timings) in the Chrome DevTools performance audit
+- the [total blocking time](https://docs.webpagetest.org/getting-started/#total-blocking-time) metric in the [webpagetest.org]() site perfromance audit
+
 
 ## References
 
