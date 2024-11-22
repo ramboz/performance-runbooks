@@ -42,6 +42,26 @@ The Largest Contentful Paint (LCP) metric measures the time from when the page s
 
 ## How to measure
 
+### Manually
+```js
+new PerformanceObserver((entryList) => {
+  for (const entry of entryList.getEntries()) {
+    console.log('LCP candidate:', entry.startTime, entry);
+  }
+}).observe({ type: 'largest-contentful-paint', buffered: true });
+```
+
+### Using web-vitals.js
+
+```js
+import { onLCP } from 'web-vitals';
+
+// Measure and log LCP as soon as it's available.
+onLCP(console.log);
+```
+
+## How to debug
+
 Follow the steps in one of:
 - [LCP in our performance audit](./performance-audit.md#fcplcp) article
 - the [LCP event](https://developer.chrome.com/docs/devtools/performance/reference#timings) in the Chrome DevTools performance audit view timings

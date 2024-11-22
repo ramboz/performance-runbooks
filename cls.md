@@ -43,6 +43,27 @@ CLS is essentially composed of:
 
 ## How to measure
 
+### Manually
+```js
+new PerformanceObserver((entryList) => {
+  for (const entry of entryList.getEntries()) {
+    console.log('Layout shift:', entry);
+  }
+}).observe({ type: 'layout-shift', buffered: true });
+```
+
+### Using web-vitals.js
+
+```js
+import { onCLS } from 'web-vitals';
+
+// Measure and log CLS in all situations
+// where it needs to be reported.
+onCLS(console.log);
+```
+
+## How to debug
+
 Follow the steps in one of:
 - [CLS in our performance audit](./performance-audit.md#cls) article
 - the [Layout Shift event](https://web.dev/articles/debug-layout-shifts#devtools) in the Chrome DevTools performance audit panel

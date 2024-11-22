@@ -43,6 +43,19 @@ The Total Blocking Time (TBT) metric measures the total amount of time after [Fi
 
 ## How to measure
 
+```js
+let totalBlockingTime = 0;
+new PerformanceObserver((entryList) => {
+  for (const entry of entryList.getEntries()) {
+    totalBlockingTime += entry.duration - 50;
+  }
+  console.log({ totalBlockingTime });
+}).observe({ type: 'longtask', buffered: true });
+```
+
+## How to debug
+
+
 Follow the steps in one of:
 - [TBT in our performance audit](./performance-audit.md#tbt) article
 - the [flame chart](https://developer.chrome.com/docs/devtools/performance/reference#timings) in the Chrome DevTools performance audit

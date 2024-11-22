@@ -40,6 +40,23 @@ The Interaction to Next Paint (INP) metric measures user interface responsivenes
 
 ## How to measure
 
+### Manually
+```js
+performance.getEntriesByType('long-animation-frame');
+```
+
+### Using web-vitals.js
+
+```js
+import { onINP } from 'web-vitals';
+
+// Measure and log INP in all situations
+// where it needs to be reported.
+onINP(console.log);
+```
+
+## How to debug
+
 Follow the steps in one of:
 - [TBT in our performance audit](./performance-audit.md#tbt) article
 - the [Interaction events](https://developer.chrome.com/docs/devtools/performance/reference#interactions) in the Chrome DevTools performance audit panel

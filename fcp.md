@@ -40,6 +40,26 @@ The First Contentful Paint (FCP) metric measures the time from when the page sta
 
 ## How to measure
 
+### Manually
+```js
+new PerformanceObserver((entryList) => {
+  for (const entry of entryList.getEntriesByName('first-contentful-paint')) {
+    console.log('FCP candidate:', entry.startTime, entry);
+  }
+}).observe({ type: 'paint', buffered: true });
+```
+
+### Using web-vitals.js
+
+```js
+import { onFCP } from 'web-vitals';
+
+// Measure and log FCP as soon as it's available.
+onFCP(console.log);
+```
+
+## How to debug
+
 Follow the steps in one of:
 - [FCP in our performance audit](./performance-audit.md#fcplcp) article
 - the [FCP event](https://developer.chrome.com/docs/devtools/performance/reference#timings) in the Chrome DevTools performance audit view timings

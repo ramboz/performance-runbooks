@@ -45,6 +45,26 @@ TTFB is essentially composed of:
 
 ## How to measure
 
+### Manually
+
+```js
+new PerformanceObserver((entryList) => {
+  const [pageNav] = entryList.getEntriesByType('navigation');
+  console.log(`TTFB: ${pageNav.responseStart}`);
+}).observe({ type: 'navigation', buffered: true });
+```
+
+### Using web-vitals.js
+
+```js
+import { onTTFB } from 'web-vitals';
+
+// Measure and log TTFB as soon as it's available.
+onTTFB(console.log);
+```
+
+## How to debug
+
 Follow the steps in one of:
 - the [network resource details](https://developer.chrome.com/docs/devtools/network#details) in the Chrome DevTools
 - the [time to first byte](https://docs.webpagetest.org/getting-started/#time-to-first-byte) metric in the [webpagetest.org]() site perfromance audit
