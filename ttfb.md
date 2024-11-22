@@ -7,10 +7,12 @@ The  Time To First Byte (TTFB) metric measures the time it takes for the network
 ## Components
 
 TTFB is essentially composed of:
+- Redirect time
+- Service worker and/or lamba function startup time (if applicable)
 - DNS lookup
 - TCP connection
-- SSL connection
-- HTTP request time
+- TLS negociation
+- Server processing time
 
 ## Value Range
 
@@ -33,6 +35,7 @@ TTFB is essentially composed of:
 
 ## Most common optimizations
 
+- Self-hosting 3rd-party dependencies to reduce domain lookup overhead
 - Use a CDN with global locations for all hosts (including DNS)
 - Use local 3rd-party APIs, co-located within the CDN pop regions
 - [Avoid redirect chains](https://developer.chrome.com/docs/lighthouse/performance/redirects)
