@@ -37,8 +37,9 @@ The Largest Contentful Paint (LCP) metric measures the time from when the page s
 - Try to have the LCP element being the same as the FCP one
 - Leverage modern media formats (webp, avif, webm) and optimize for the viewport (responsive image)
   - if the LCP element is a video, make sure to use a poster image
-  - if the LCP element is an image, make sure it is `loading` as `eager` and its `fetchpriority` is set to `high`
-- Use speculative pre-rendering
+  - if the LCP element is an image, make sure it is `loading` as `eager` and its [`fetchpriority`](https://web.dev/articles/fetch-priority) is set to `high`
+- Leverage the `navigator.connection` API to adjust media variants for slower networks
+- Use [speculative pre-rendering](https://developer.chrome.com/docs/web-platform/prerender-pages)
 
 ## How to measure
 
