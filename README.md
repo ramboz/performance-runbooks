@@ -17,7 +17,7 @@ A set of runbooks to address web page performance issues and follows LHS/[CWV](h
 - [Time to First Byte (TTFB)](./ttfb.md)
 - [Total Blocking Time (TBT)](./tbt.md)
 - Time to Interactive (TTI)
-- Speed Index (SI)
+- [Speed Index (SI)](./si.md)
 
 
 ## Measuring tools

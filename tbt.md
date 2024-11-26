@@ -59,7 +59,6 @@ new PerformanceObserver((entryList) => {
 
 ## How to debug
 
-
 Follow the steps in one of:
 - [TBT in our performance audit](./performance-audit.md#tbt) article
 - the [flame chart](https://developer.chrome.com/docs/devtools/performance/reference#timings) in the Chrome DevTools performance audit
