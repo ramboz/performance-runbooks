@@ -1,6 +1,6 @@
 # LHS/CWV Performance Runbooks
 
-A set of runbooks to address web page performance issues and follows LHS/[CWV](https://web.dev/articles/vitals) best practices
+A set of runbooks to address web page performance issues and follows [Lighthouse Scoring (LHS)](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring) & [Core Web Vitals (CWV)](https://web.dev/articles/vitals) best practices.
 
 ## The key metrics
 
@@ -19,10 +19,16 @@ A set of runbooks to address web page performance issues and follows LHS/[CWV](h
 - Time to Interactive (TTI)
 - [Speed Index (SI)](./si.md)
 
+## Related performance topics
+
+- [Marketing Technologies (MarTech)](./martech.md) 3rd-party libraries
 
 ## Measuring tools
 
+Follow the steps in the [performance audit](./performance-audit.md) walkthrough, or use one of the tools below.
+
 ### Lab
+
 - [PageSpeed](https://pagespeed.web.dev/)
 - [Lightouse](https://developer.chrome.com/docs/lighthouse/overview#devtools) in the Chrome DevTools
 - [Performance panel](https://developer.chrome.com/docs/devtools/performance/overview) in the Chrome DevTools
@@ -35,10 +41,15 @@ A set of runbooks to address web page performance issues and follows LHS/[CWV](h
 - [Microsoft Clarity](https://learn.microsoft.com/en-us/clarity/insights/performance-widget)
 - [Adobe RUM](https://www.aem.live/docs/rum)
 
-## Table of Contents
+## How to prioritize fixes
 
-- [Performance Audit](./performance-audit.md)
-- [TTFB](./ttfb.md)
-- [LCP](./lcp.md)
-- [FCP](./fcp.md)
-- [CLS](./cls.md)
+1. Is you page indexed in Google Search Console?
+    - If not, defer the fix
+2. Do you have real user monitoring (RUM) data for that page?
+    - If not, defer the fix
+3. Are the CWV metrics failing for that page?
+    - If not, defer the fix
+4. (optional) Is the page ranking low and having high search volume?
+    - If not, defer the fix
+
+![Core Web Vitals "Best Opportunity" Map](./assets/cwv-best-opportunity-map.png)
