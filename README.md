@@ -43,7 +43,7 @@ Follow the steps in the [performance audit](./performance-audit.md) walkthrough,
 
 ## How to prioritize fixes
 
-1. Is you page indexed in Google Search Console?
+1. Is your page indexed in Google Search Console?
     - If not, defer the fix
 2. Do you have real user monitoring (RUM) data for that page?
     - If not, defer the fix
