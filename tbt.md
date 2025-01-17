@@ -70,3 +70,4 @@ Follow the steps in one of:
 - https://web.dev/articles/tbt
 - https://web.dev/articles/optimize-long-tasks
 - https://www.debugbear.com/docs/metrics/total-blocking-time
+- https://macarthur.me/posts/navigating-the-event-loop/
