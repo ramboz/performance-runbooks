@@ -32,7 +32,7 @@ The Largest Contentful Paint (LCP) metric measures the time from when the page s
 ## Most common optimizations
 
 - Follow the [TTFB](./ttfb.md) optimizations
-- Follow the [LCP](./lcp.md) optimizations
+- Follow the [FCP](./fcp.md) optimizations
 - Include the LCP element in the initial HTML document
 - Try to have the LCP element being the same as the FCP one
 - Leverage modern media formats (webp, avif, webm) and optimize for the viewport (responsive image)
