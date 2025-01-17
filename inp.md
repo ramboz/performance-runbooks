@@ -33,6 +33,7 @@ The Interaction to Next Paint (INP) metric measures user interface responsivenes
 - Avoid unnecessary re-rendering of your components (especially in the case of React)
 - [Reduce relayouts](https://www.debugbear.com/blog/front-end-javascript-performance#avoid-dom-access-that-requires-layout-work) due to interactions.
   - [What forces layout/reflow. The comprehensive list.](https://gist.github.com/paulirish/5d52fb081b3570c81e3a)
+  - Look at alternative ways to get element or scroll positions, like https://toruskit.com/blog/how-to-get-element-bounds-without-reflow/
 - Offset complex calculations to a web worker, or at least show a UI update before starting it (i.e. open a dialog with a spinning wheel) and perform further updates asynchronously
 - Cache complex computation or UI updates with [memoization](https://www.debugbear.com/blog/front-end-javascript-performance#memoization) techniques where appropriate
 - Defer UI updates outside of the current viewport
