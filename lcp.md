@@ -28,6 +28,7 @@ The Largest Contentful Paint (LCP) metric measures the time from when the page s
 - Render-blocking resources in the critical path that delay the LCP resource loading
 - Unnecessary resources in the critical path that delay the LCP resource loading
 - Non-optimized custom fonts
+- Cookie consent dialog is loaded async and being picked up as LCP (especially on mobile)
 
 ## Most common optimizations
 
@@ -40,6 +41,7 @@ The Largest Contentful Paint (LCP) metric measures the time from when the page s
   - if the LCP element is an image, make sure it is `loading` as `eager` and its [`fetchpriority`](https://web.dev/articles/fetch-priority) is set to `high`
 - Leverage the `navigator.connection` API to adjust media variants for slower networks
 - Use [speculative pre-rendering](https://developer.chrome.com/docs/web-platform/prerender-pages)
+- Redesign cookie consent dialog so it is smaller than the actual LCP on the page
 
 ## How to measure
 

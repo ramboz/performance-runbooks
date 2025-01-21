@@ -53,3 +53,11 @@ Follow the steps in the [performance audit](./performance-audit.md) walkthrough,
     - If not, defer the fix
 
 ![Core Web Vitals "Best Opportunity" Map](./assets/cwv-best-opportunity-map.png)
+
+## FAQ
+
+**Why does Page Speed matter?**
+
+Read:
+- https://web.dev/learn/performance/why-speed-matters
+- https://www.debugbear.com/blog/why-site-speed-matters

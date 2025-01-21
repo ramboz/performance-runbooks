@@ -76,5 +76,6 @@ Follow the steps in one of:
 - https://web.dev/articles/optimize-cls
 - https://web.dev/articles/debug-layout-shifts
 - https://www.debugbear.com/docs/metrics/cumulative-layout-shift
+- https://www.debugbear.com/blog/devtools-layout-shift
 - https://www.woorank.com/en/core-web-vitals/improving-cumulative-layout-shift
 - https://culture-tecture.adobe.com/en/publish/2024/08/26/aem-blog-cumulative-layout-shift-cls-a-developer-s-nightmare
