@@ -72,9 +72,9 @@ Follow the steps in one of:
 - the [network resource details](https://developer.chrome.com/docs/devtools/network#details) in the Chrome DevTools
 - the [time to first byte](https://docs.webpagetest.org/getting-started/#time-to-first-byte) metric in the [webpagetest.org]() site perfromance audit
 
-
 ## References
 
 - https://web.dev/articles/ttfb
 - https://web.dev/articles/optimize-ttfb
 - https://www.debugbear.com/docs/metrics/time-to-first-byte
+- https://www.debugbear.com/blog/http-server-connections
