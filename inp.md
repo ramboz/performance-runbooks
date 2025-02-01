@@ -68,3 +68,4 @@ Follow the steps in one of:
 - https://web.dev/articles/inp
 - https://web.dev/articles/optimize-inp
 - https://www.debugbear.com/docs/metrics/interaction-to-next-paint
+- https://kurtextrem.de/posts/improve-inp
