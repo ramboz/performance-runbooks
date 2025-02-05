@@ -28,6 +28,7 @@ CLS is essentially composed of:
 - Images, ads or social embeds are loaded without proper space being reserved
 - Async content is rendering without proper space being reserved
 - [Use of custom fonts with no proper fallback](https://www.debugbear.com/blog/web-font-layout-shift)
+- Loading async content that causes the scrollbar to appear lazily
 
 ## Most common optimizations
 
@@ -40,6 +41,7 @@ CLS is essentially composed of:
   - https://www.debugbear.com/blog/web-font-layout-shift#adjusting-font-metrics
   - https://www.aem.live/developer/font-fallback
 - [Avoid inserting new content without a clear user interaction](https://web.dev/articles/optimize-cls#avoid_inserting_new_content_without_a_user_interaction) (like a "load more" button on an infinite list, or toggling an accordion panel)
+- Leverage the [`scrollbar-gutter: stable`](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter) CSS property
 
 ## How to measure
 
