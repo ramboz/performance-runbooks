@@ -29,7 +29,7 @@ The Interaction to Next Paint (INP) metric measures user interface responsivenes
 ## Most common optimizations
 
 - Reduce and break up background activity on the main thread
-   - Follow the [TBT](./tbT.md) optimizations
+   - Follow the [TBT](./tbt.md) optimizations
 - Avoid unnecessary re-rendering of your components (especially in the case of React)
 - [Reduce relayouts](https://www.debugbear.com/blog/front-end-javascript-performance#avoid-dom-access-that-requires-layout-work) due to interactions.
   - [What forces layout/reflow. The comprehensive list.](https://gist.github.com/paulirish/5d52fb081b3570c81e3a)
