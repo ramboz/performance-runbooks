@@ -38,6 +38,7 @@ The Total Blocking Time (TBT) metric measures the total amount of time after [Fi
   - Use the [`requestIdleCallback`](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback) API to run low priority tasks when the browser is idle between rendering frames
   - Use the [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame) API to run tasks that modify the DOM and require a new frame to render
   - Use the [`scheduler.yield`](https://developer.mozilla.org/en-US/docs/Web/API/Scheduler/yield) API to hand over control to the main thread during a long task, so it can execute other tasks in-between if needed
+  - or directly leverage the performance helper methods from [aem-cwv-helper](https://github.com/ramboz/aem-cwv-helper) to break up long tasks, patch datalayer and event listeners from 3rd-party scripts
 - [Offload complex background work to a web worker](https://web.dev/articles/off-main-thread)
 - For `iframe`-like embeds, try do defer loading with any of these techniques:
   - load the `iframe` only when the user scrolls to the embed, by leveraging an the [`IntersectionObserver`](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver) API
