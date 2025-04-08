@@ -53,6 +53,7 @@ Follow the steps in the [performance audit](./performance-audit.md) walkthrough,
     - If not, defer the fix
 
 ![Core Web Vitals "Best Opportunity" Map](./assets/cwv-best-opportunity-map.png)
+Source: https://searchengineland.com/find-core-web-vitals-opportunities-447421
 
 ## FAQ
 
