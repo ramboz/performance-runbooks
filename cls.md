@@ -82,3 +82,4 @@ Follow the steps in one of:
 - https://www.woorank.com/en/core-web-vitals/improving-cumulative-layout-shift
 - https://culture-tecture.adobe.com/en/publish/2024/08/26/aem-blog-cumulative-layout-shift-cls-a-developer-s-nightmare
 - https://css-triggers.com/
+- https://richstyle.org/?documentation/css-will-change-property-en
